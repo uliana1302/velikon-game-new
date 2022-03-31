@@ -111,12 +111,13 @@
   top: 18vw;
   left: 27vw;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card-rec {
   height: 19.3vw;
   width: 45.76vw;
-  top: 0;
-  left: 0;
   position: absolute;
   background-image: url("../images/start-page/card_rec.svg");
   background-repeat: no-repeat;
@@ -124,8 +125,6 @@
 }
 .card-text {
   position: absolute;
-  top: 5.8vw;
-  left: 6.2vw;
 }
 
 
