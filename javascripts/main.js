@@ -36,29 +36,26 @@ $(function () {
   		count += 1;
   		// переход на локацию 2
   		if (count == 1) {
-  		$(".sprite-l1, .obl-1, .obl-2, .obl-3, .obl-4, .obl-5, .obl-6, .obl-7, .obl-8, .obl-9, .obl-10, .obl-11, .obl-12, .obl-13").css('display', 'none');
-  		$(".sprite-l2, .b-1, .b-2, .b-3, .b-4, .b-5, .verevka-2").css('display', 'block');
+  		$(".sprite-l1, .oblaka, .menu-panel p:nth-of-type(1), .verev-1, .tablichka-1").css('display', 'none');
+  		$(".sprite-l2, .belie, .menu-panel p:nth-of-type(2), .verev-2, .tablichka-2").css('display', 'block');
+			$(".tablichka").css('width', '11vw')
   		// $(".tablichka").css('animation', 'tablichka 3s 3s');
   		}
   		// переход на локацию 3
   		if (count == 2) {
-  		$(".sprite-l2, .b-1, .b-2, .b-3, .b-4, .b-5, .verevka-2").css('display', 'none');
-  		$(".sprite-l3, .pr-1, .pr-2, .pr-3, .pr-4, .pr-5, .pr-6, .pr-7, .pr-8, .car-1, .car-2, .stolb-1, .stolb-2").css('display', 'block');
+  		$(".sprite-l2, .belie, .verev-2, .tablichka-2, .menu-panel p:nth-of-type(2)").css('display', 'none');
+  		$(".sprite-l3, .provoda, .verev-3, .tablichka-3, .menu-panel p:nth-of-type(3), .verev, .tablichka, .tablichka p:nth-of-type(3)").css('display', 'block');
   		}
   		// переход на локацию 4
   		if (count == 3) {
-  		$(".sprite-l3, .pr-1, .pr-2, .pr-3, .pr-4, .pr-5, .pr-6, .pr-7, .pr-8, .car-1, .car-2, .stolb-1, .stolb-2").css('display', 'none');
-  		$(".sprite-l4, .kamni, .m-1, .m-2, .m-3, .m-4, .m-5, .m-6, .riba-1, .riba-2, .riba-3, .riba-4, .riba-5, .riba-6, .riba-7, .riba-8, .riba-9, .riba-10, .wave-1, .wave-2").css('display', 'block');
+  		$(".sprite-l3, .provoda, .verev-3, .tablichka-3, .menu-panel p:nth-of-type(3)").css('display', 'none');
+  		$(".sprite-l4, .ribi-musor, .verev-4, .tablichka-4, .menu-panel p:nth-of-type(4), .verev, .tablichka, .tablichka p:nth-of-type(4)").css('display', 'block');
   		}
   		// переход на последний экран
   		if (count == 4) {
-  		$(".sprite-l4, .kamni, .m-1, .m-2, .m-3, .m-4, .m-5, .m-6, .riba-1, .riba-2, .riba-3, .riba-4, .riba-5, .riba-6, .riba-7, .riba-8, .riba-9, .riba-10, .wave-1, .wave-2, .button-play, .button-next, .button-pause, .menu-panel").css('display', 'none');
-  		$(".golova, .text-k1, .text-k2").css('display', 'block');
+  		$(".sprite-l4, .ribi-musor, .verev-4, .tablichka-4, .button-play, .button-next, .button-pause, .menu-panel").css('display', 'none');
+  		$(".golova, .posl-text").css('display', 'block');
   		$(".button-restart").css('margin-left', '5vw');
-  		// setTimeout(function () {
-  		// 	$(".golova").css('opacity', '1');
-  		// }, 300);
-
   		$(".noga_1").addClass("noga_1-h");
   		$(".noga_2").addClass("noga_2-h");
   		}
@@ -73,38 +70,63 @@ $(function () {
 	});
 
   // локация 2 (бельё)
-	$(".b-1, .b-2, .b-3, .b-4, .b-5").draggable();
+	$(".b-1").draggable();
 	$(".b-div").droppable ({
 		out: function() {
-			$(".b-1, .b-2, .b-3, .b-4, .b-5").css('display', 'none')
+			$(".b-1").css('display', 'none')
+		}
+	});
+	$(".b-2").draggable();
+	$(".b-div").droppable ({
+		out: function() {
+			$(".b-2").css('display', 'none')
+		}
+	});
+	$(".b-3").draggable();
+	$(".b-div").droppable ({
+		out: function() {
+			$(".b-3").css('display', 'none')
+		}
+	});
+	$(".b-4").draggable();
+	$(".b-div").droppable ({
+		out: function() {
+			$(".b-4").css('display', 'none')
+		}
+	});
+	$(".b-5").draggable();
+	$(".b-div").droppable ({
+		out: function() {
+			$(".b-5").css('display', 'none')
 		}
 	});
 
   // локация 3 (провода)
 
-  // $(".pr-1, .pr-2, .pr-3, .pr-4, .pr-5, .pr-6, .pr-7, .pr-8").click(function() {
-	//    $(this).css('opacity', '0');
-	// });
+  $(".pr-1").click(function() {
+	   $(this).addClass('pr-1_1');
+		 });
+	$(".pr-3").click(function() {
+		 $(this).addClass('pr-3_1');
+		 });
+	$(".pr-4").click(function() {
+		 $(this).addClass('pr-4_1');
+		 });
+	$(".pr-5").click(function() {
+	   $(this).addClass('pr-5_1');
+		 });
+	$(".pr-6").click(function() {
+	  	$(this).addClass('pr-6_1');
+		 });
+	$(".pr-8").click(function() {
+	   $(this).addClass('pr-8_1');
+		 });
 
-  // $(".pr-1, .pr-2, .pr-3, .pr-4, .pr-5, .pr-6, .pr-7, .pr-8").hover(function(){
-	//   $(".pr-1").css("display", "none");
-  //   $(".pr-h-1").css("display", "block");
-  //   $(".pr-2").css("display", "none");
-  //   $(".pr-3").css("display", "none");
-  //   $(".pr-h-3").css("display", "block");
-  //   $(".pr-4").css("display", "none");
-  //   $(".pr-h-4").css("display", "block");
-  //   $(".pr-5").css("display", "none");
-  //   $(".pr-h-5").css("display", "block");
-  //   $(".pr-6").css("display", "none");
-  //   $(".pr-h-6").css("display", "block");
-  //   $(".pr-7").css("display", "none");
-  //   $(".pr-8").css("display", "none");
-  //   $(".pr-h-8").css("display", "block");
-  // });
 
   // локация 4 (море)
-  $(".m-1, .m-2, .m-3, .m-4, .m-5, .m-6").draggable({ axis: "x" });
+  $(".m").hover(function() {
+		$(this).addClass('m-anim');
+	});
 
 
 });
