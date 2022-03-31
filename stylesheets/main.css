@@ -1,0 +1,761 @@
+body {
+  background-image: url("../images/fon_svetli.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+p {
+  font-family: "OktaNeue-Light";
+  font-weight: 400;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  left: 0;
+}
+
+
+
+/* блок игрового поля */
+.pole {
+  height: 89.4vh;
+  top: 0;
+}
+/* 1: ноги */
+.nogi {
+  height: 63.47vw;
+  width: 70.9vw;
+  position: absolute;
+  bottom: 0;
+  left: 5.6vw;
+}
+.nogi div {
+  position: absolute;
+  height: 57vw;
+  width: 33.1vw;
+  bottom: 0;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.noga_1 {
+  left: 0;
+  background-image: url("../images/noga_1.svg");
+  animation: noga-hod-1 2s 1s ease-in infinite;
+}
+.noga_1-h {
+  left: 0;
+  background-image: url("../images/noga_1.svg");
+  animation: none;
+}
+@keyframes noga-hod-1 {
+  0%, 100% {bottom: 0;}
+  50%, 60% {bottom: 18vw;}
+}
+.noga_2 {
+  left: 38vw;
+  background-image: url("../images/noga_2.svg");
+  animation: noga-hod-2 2s 2s ease-in infinite;
+}
+.noga_2-h {
+  left: 38vw;
+  background-image: url("../images/noga_2.svg");
+  animation: none;
+}
+@keyframes noga-hod-2 {
+  0%, 100% {bottom: 0;}
+  50%, 60% {bottom: 18vw;}
+}
+
+/* 2: спрайтовая анимация */
+.sprite {
+  position: absolute;
+  height: 21.18vw;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.sprite div {
+  position: absolute;
+  width: 100vw;
+}
+    /* локация 1 */
+.sprite-l1 {
+  background-image: url("../images/l-1/sprite-l1.svg");
+  background-size: 380%;
+  background-position: -113vw top;
+  height: 17.43vw;
+  top: 3.7vw;
+  animation: sprite-1 7s 3s linear infinite;
+}
+.sprite-l1-h {
+  background-image: url("../images/l-1/sprite-l1.svg");
+  background-size: 380%;
+  background-position: -113vw top;
+  height: 17.43vw;
+  top: 3.7vw;
+  animation: none;
+}
+@keyframes sprite-1 {
+  0% {background-position: -113vw top;}
+  35% {background-position: -191.7vw top;}
+  70% {background-position: -294.2vw top;}
+  100% {background-position: -396.7vw top;}
+}
+    /* локация 2 */
+.sprite-l2 {
+  display: none;
+  background-image: url("../images/l-2/sprite-l2.svg");
+  background-size: 380%;
+  background-position: -95.83vw top;
+  height: 12.22vw;
+  top: 8.9vw;
+  animation: sprite-2 7s 1.5s linear infinite;
+}
+.sprite-l2-h {
+  display: none;
+  background-image: url("../images/l-2/sprite-l2.svg");
+  background-size: 380%;
+  background-position: -95.83vw top;
+  height: 12.22vw;
+  top: 8.9vw;
+  animation: none;
+}
+@keyframes sprite-2 {
+  0% {background-position: -95.83vw top;}
+  35% {background-position: -195.83vw top;}
+  70% {background-position: -295.83vw top;}
+  100% {background-position: -379.37vw top;}
+}
+    /* локация 3 */
+.sprite-l3 {
+  display: none;
+  background-image: url("../images/l-3/sprite-l3.svg");
+  background-size: 300%;
+  background-position: -99vw top;
+  height: 19.7vw;
+  top: 1.5vw;
+  animation: sprite-3 7s 1.5s linear infinite;
+}
+.sprite-l3-h {
+  display: none;
+  background-image: url("../images/l-3/sprite-l3.svg");
+  background-size: 300%;
+  background-position: -99vw top;
+  height: 19.7vw;
+  top: 1.5vw;
+  animation: none;
+}
+@keyframes sprite-3 {
+  0% {background-position: -99vw top;}
+  50% {background-position: -199.61vw top;}
+  100% {background-position: -288.47vw top;}
+}
+    /* локация 4 */
+.sprite-l4 {
+  display: none;
+  background-image: url("../images/l-4/sprite-l4.svg");
+  background-size: 170%;
+  background-position: -96.1vw top;
+  height: 21.18vw;
+  top: 0;
+  animation: sprite-4 7s 1.5s linear infinite;
+}
+.sprite-l4-h {
+  display: none;
+  background-image: url("../images/l-4/sprite-l4.svg");
+  background-size: 170%;
+  background-position: -96.1vw top;
+  height: 21.18vw;
+  top: 0;
+  animation: none;
+}
+@keyframes sprite-4 {
+  0% {background-position: -96.1vw top;}
+  50% {background-position: -196.1vw top;}
+  100% {background-position: -239.91vw top;}
+}
+
+/* 3: элементы локации */
+.elements {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background-image: url("../images/start-page/none-moveable.svg"); */
+  /* background-image: url("../images/Frame 35.png"); */
+  /* background-image: url("../images/l-4/Frame 50.png"); */
+  /* background-image: url("../images/l-3/Frame 38.png"); */
+  /* background-image: url("../images/l-2/Frame 36.png"); */
+  /* background-image: url("../images/l-1/Group 207.png"); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5; */
+}
+  /* локация 1: облака */
+.oblaka {
+  position: absolute;
+  height: 44vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.oblaka div {
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.obl-1 {
+  height: 15.2vw;
+  width: 23.1vw;
+  top: 23.2vw;
+  left: 0vw;
+  background-image: url("../images/l-1/obl-1.svg");
+}
+.obl-2 {
+  height: 5.9vw;
+  width: 12.4vw;
+  top: 21.7vw;
+  left: 15.4vw;
+  background-image: url("../images/l-1/obl-2.svg");
+}
+.obl-3 {
+  height: 17vw;
+  width: 31vw;
+  top: 4vw;
+  left: 6.8vw;
+  background-image: url("../images/l-1/obl-3.svg");
+}
+.obl-4 {
+  height: 6.2vw;
+  width: 13.4vw;
+  top: 29.7vw;
+  left: 28.5vw;
+  background-image: url("../images/l-1/obl-4.svg");
+}
+.obl-5 {
+  height: 10.7vw;
+  width: 35.5vw;
+  top: 20.2vw;
+  left: 30.8vw;
+  background-image: url("../images/l-1/obl-5.svg");
+}
+.obl-6 {
+  height: 14.3vw;
+  width: 10.3vw;
+  top: 0;
+  left: 38.5vw;
+  background-image: url("../images/l-1/obl-6.svg");
+}
+.obl-7 {
+  height: 18.3vw;
+  width: 31.3vw;
+  top: 0;
+  left: 46.5vw;
+  background-image: url("../images/l-1/obl-7.svg");
+}
+.obl-8 {
+  height: 2.8vw;
+  width: 6.5vw;
+  top: 35.5vw;
+  left: 58.2vw;
+  background-image: url("../images/l-1/obl-8.svg");
+}
+.obl-9 {
+  height: 9.9vw;
+  width: 20.3vw;
+  top: 26.2vw;
+  left: 62.3vw;
+  background-image: url("../images/l-1/obl-9.svg");
+}
+.obl-10 {
+  height: 5.3vw;
+  width: 10vw;
+  top: 16.8vw;
+  left: 69vw;
+  background-image: url("../images/l-1/obl-10.svg");
+  z-index: 2;
+}
+.obl-11 {
+  height: 18.5vw;
+  width: 32.4vw;
+  top: 9.8vw;
+  left: 68.8vw;
+  background-image: url("../images/l-1/obl-11.svg");
+}
+.obl-12 {
+  height: 7.5vw;
+  width: 18.4vw;
+  top: 0;
+  left: 80.4vw;
+  background-image: url("../images/l-1/obl-12.svg");
+}
+.obl-13 {
+  height: 4vw;
+  width: 8.8vw;
+  top: 40vw;
+  left: 90.8vw;
+  background-image: url("../images/l-1/obl-13.svg");
+}
+
+    /* локация 2: бельё */
+.belie {
+  display: none;
+  position: absolute;
+  height: 20.2vw;
+  width: 100%;
+  top: 36.55vh;
+  left: 0;
+}
+.belie div {
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: move;
+  z-index: 5;
+}
+.b-1 {
+  height: 4.4vw;
+  width: 1.7vw;
+  top: 2.8vw;
+  left: 2.4vw;
+  background-image: url("../images/l-2/b-1.svg");
+}
+.b-2 {
+  height: 13.3vw;
+  width: 20.28vw;
+  top: 0;
+  left: 4.5vw;
+  background-image: url("../images/l-2/b-2.svg");
+}
+.b-3 {
+  height: 12.96vw;
+  width: 7.54vw;
+  top: 3.4vw;
+  left: 26.4vw;
+  background-image: url("../images/l-2/b-3.svg");
+}
+.b-4 {
+  height: 4.47vw;
+  width: 2.5vw;
+  top: 3.2vw;
+  left: 36.4vw;
+  background-image: url("../images/l-2/b-4.svg");
+}
+.b-5 {
+  height: 18.61vw;
+  width: 8.2vw;
+  top: 1.5vw;
+  left: 60vw;
+  background-image: url("../images/l-2/b-5.svg");
+}
+.verevka-2 {
+  height: 5vw;
+  width: 101.67vw;
+  top: 1.5vw;
+  left: -1.1vw;
+  background-image: url("../images/l-2/verevka-2.svg");
+}
+/* .b-div {} */
+
+    /* локация 3 */
+.provoda {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.provoda div {
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.pr-1 {
+  height: 6.5vw;
+  width: 6.5vw;
+  top: 10vw;
+  left: 0;
+  background-image: url("../images/l-3/pr-1.svg");
+}
+.pr-2 {
+  height: 6.41vw;
+  width: 7.44vw;
+  top: 1.5vw;
+  left: 18vw;
+  background-image: url("../images/l-3/pr-2.svg");
+}
+.pr-3 {
+  height: 11.41vw;
+  width: 26.44vw;
+  top: 0;
+  left: 18vw;
+  background-image: url("../images/l-3/pr-3.svg");
+}
+.pr-4 {
+  height: 4.9vw;
+  width: 26.87vw;
+  top: 9vw;
+  left: 17vw;
+  background-image: url("../images/l-3/pr-4.svg");
+}
+.pr-5 {
+  height: 15vw;
+  width: 25.8vw;
+  top: 4vw;
+  left: 17.8vw;
+  background-image: url("../images/l-3/pr-5.svg");
+}
+.pr-6 {
+  height: 21.64vw;
+  width: 26.64vw;
+  top: 9vw;
+  left: 17.8vw;
+  background-image: url("../images/l-3/pr-6.svg");
+}
+.pr-7 {
+  height: 6.45vw;
+  width: 5.48vw;
+  top: 17vw;
+  left: 55.8vw;
+  background-image: url("../images/l-3/pr-7.svg");
+}
+.pr-8 {
+  height: 14.2vw;
+  width: 46.11vw;
+  top: 8.4vw;
+  left: 55.6vw;
+  background-image: url("../images/l-3/pr-8.svg");
+}
+.h {
+  display: none;
+}
+.pr-1_1 {
+  height: 2.64vw;
+  width: 5.83vw;
+  top: 14.4vw;
+  left: 0;
+  background-image: url("../images/l-3/pr-h-1.svg");
+}
+.pr-3_1 {
+  height: 9.64vw;
+  width: 26.17vw;
+  top: 2.4vw;
+  left: 18vw;
+  background-image: url("../images/l-3/pr-h-3.svg");
+}
+.pr-4_1 {
+  height: 11.92vw;
+  width: 25.75vw;
+  top: 10.5vw;
+  left: 18vw;
+  background-image: url("../images/l-3/pr-h-4.svg");
+}
+.pr-5_1 {
+  height: 20.56vw;
+  width: 25.75vw;
+  top: 8vw;
+  left: 18vw;
+  background-image: url("../images/l-3/pr-h-5.svg");
+}
+.pr-6_1 {
+  height: 15vw;
+  width: 30vw;
+  top: 13vw;
+  left: 17.8vw;
+  background-image: url("../images/l-3/pr-h-6.svg");
+}
+.pr-8_1 {
+  height: 14.44vw;
+  width: 44.86vw;
+  top: 13vw;
+  left: 56vw;
+  background-image: url("../images/l-3/pr-h-8.svg");
+}
+.stolb-1 {
+  height: 48.61vw;
+  width: 1.1vw;
+  top: 6.4vw;
+  left: 39.9vw;
+  background-image: url("../images/l-3/stolb-1.svg");
+}
+.stolb-2 {
+  height: 57.22vw;
+  width: 1.1vw;
+  top: 0;
+  left: 96.2vw;
+  background-image: url("../images/l-3/stolb-2.svg");
+}
+.car-1 {
+  height: 3vw;
+  width: 6.5vw;
+  bottom: 0;
+  left: 46vw;
+  background-image: url("../images/l-3/car-1.svg");
+  animation: car-1 4s 3s ease infinite;
+}
+@keyframes car-1 {
+  0% {left: 46vw;}
+  40% {left: -10vw;}
+  80% {left: 110vw;}
+  100% {left: 46vw;}
+}
+.car-2 {
+  height: 2.15vw;
+  width: 4.6vw;
+  bottom: 0;
+  left: 76vw;
+  background-image: url("../images/l-3/car-2.svg");
+  animation: car-2 4s 3s ease infinite;
+}
+@keyframes car-2 {
+  0% {left: 76vw;}
+  10% {left: 110vw;}
+  60% {left: -10vw;}
+  100% {left: 76vw;}
+}
+    /* локация 4 */
+.ribi-musor {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.ribi-musor div {
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.riba-1 {
+  height: 6vw;
+  width: 7.12vw;
+  top: 31vw;
+  left: 3vw;
+  background-image: url("../images/l-4/riba-1.svg");
+}
+.riba-2 {
+  height: 4.5vw;
+  width: 16.1vw;
+  top: 18vw;
+  left: 0;
+  background-image: url("../images/l-4/riba-2.svg");
+}
+.riba-3 {
+  height: 18.79vw;
+  width: 20.66vw;
+  top: 0;
+  left: 10.5vw;
+  background-image: url("../images/l-4/riba-3.svg");
+}
+.riba-4 {
+  height: 8.72vw;
+  width: 12.35vw;
+  top: 19vw;
+  left: 27.3vw;
+  background-image: url("../images/l-4/riba-4.svg");
+}
+.riba-5 {
+  height: 4.07vw;
+  width: 23.85vw;
+  top: 33.8vw;
+  left: 16.2vw;
+  background-image: url("../images/l-4/riba-5.svg");
+}
+.riba-6 {
+  height: 4.72vw;
+  width: 27.65vw;
+  top: 7.9vw;
+  left: 44.5vw;
+  background-image: url("../images/l-4/riba-6.svg");
+}
+.riba-7 {
+  height: 29vw;
+  width: 29.51vw;
+  top: 13.7vw;
+  left: 56.8vw;
+  background-image: url("../images/l-4/riba-7.svg");
+}
+.riba-8 {
+  height: 6.83vw;
+  width: 8.12vw;
+  top: 4vw;
+  left: 83vw;
+  background-image: url("../images/l-4/riba-8.svg");
+}
+.riba-9 {
+  height: 8.72vw;
+  width: 12.35vw;
+  top: 23vw;
+  left: 86.6vw;
+  background-image: url("../images/l-4/riba-9.svg");
+}
+.riba-10 {
+  height: 7.66vw;
+  width: 7.72vw;
+  top: 40vw;
+  left: 90.8vw;
+  background-image: url("../images/l-4/riba-10.svg");
+}
+.m-1 {
+  height: 14.68vw;
+  width: 12.27vw;
+  top: 10vw;
+  left: 19.6vw;
+  background-image: url("../images/l-4/m-1.svg");
+}
+.m-2 {
+  height: 9.53vw;
+  width: 5.72vw;
+  top: 22.5vw;
+  left: 36vw;
+  background-image: url("../images/l-4/m-2.svg");
+}
+.m-3 {
+  height: 8.1vw;
+  width: 17.54vw;
+  top: 32vw;
+  left: 28vw;
+  background-image: url("../images/l-4/m-3.svg");
+}
+.m-4 {
+  height: 8.5vw;
+  width: 19.6vw;
+  top: 6vw;
+  left: 39vw;
+  background-image: url("../images/l-4/m-4.svg");
+}
+.m-5 {
+  height: 28.8vw;
+  width: 26.09vw;
+  top: 0;
+  left: 51.2vw;
+  background-image: url("../images/l-4/m-5.svg");
+}
+.m-6 {
+  height: 10.19vw;
+  width: 6.11vw;
+  top: 37vw;
+  left: 86.9vw;
+  background-image: url("../images/l-4/m-6.svg");
+}
+    /* последний экран: голова */
+.golova {
+  display: none;
+  position: absolute;
+  height: 53.45vw;
+  width: 34.85vw;
+  top: -8vw;
+  right: 2vw;
+  background-image: url("../images/golova.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: golova 1.5s ease-out 1;
+}
+@keyframes golova {
+  0% {top: -48vw;}
+  100% {top: -8vw;}
+}
+
+
+
+/* блок меню */
+.menu {
+  height: 10.6vh;
+  bottom: 0;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+}
+.button-pause {
+  background-image: url("../images/button-pause.svg");
+  background-repeat: no-repeat;
+  height: 4vw;
+  width: 4vw;
+  background-size: 100%;
+  position: relative;
+  margin-left: 5vw;
+  margin-right: 1vw;
+}
+.button-restart {
+  background-image: url("../images/button-restart.svg");
+  background-repeat: no-repeat;
+  height: 4vw;
+  width: 4vw;
+  background-size: 100%;
+  position: relative;
+}
+.button-next {
+  background-image: url("../images/button-next-n.svg");
+  background-repeat: no-repeat;
+  height: 4vw;
+  width: 4vw;
+  background-size: 100%;
+  position: relative;
+  /* margin-right: 3.5vw; */
+  margin-left: 23vw;
+  z-index: 100;
+}
+.hidden {
+  background-image: url("../images/start-page/button-play.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 4vw;
+  width: 4vw;
+}
+.menu-panel {
+  height: 4vw;
+  width: 36vw;
+  border: 2px solid black;
+  position: relative;
+  margin-left: 16vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.menu-panel p {
+  opacity: 0;
+}
+.posl-text {
+  display: none;
+  width: 82.36vw;
+  height: 3.2vw;
+  bottom: 2vw;
+  left: 11vw;
+  position: absolute;
+}
+.text-k1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.text-k2 {
+  position: absolute;
+  right: 0;
+  bottom: -0.7vw;
+}
+.text-k2 p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+
+
+/* экран для мобьных устройств */
+.adaptive {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: none;
+}
