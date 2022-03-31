@@ -24,17 +24,17 @@
   .card-rec {transform: scale(.8); top: 0; left: -1.2vw;}
   .card-text {top: 4.5vw; left: 5vw;}
   .car {top: -1vw; left: 0; offset-path: path("M1428 508C1524 516 1785 556.203 1964 472V2C1900 58.6667 1471.8 255.8 1291 243C1177.67 225.667 865.2 179.8 846 135C588 422 365.6 542 -84 534V972L1964 983V524C1653 598 1512.8 524 1428 508Z");}
-}
+} */
 
 @media all and (max-device-width: 768px) {
-  .hid {display: none;}
-  .nehid {display: block;}
+  .pole, .menu {display: none;}
+  .adaptive {display: flex;}
 }
-@media all and (min-device-width: 415px) and (max-device-width: 600px) {
-  .rect {top: 438px; left: 20.48vw; width: 214px;}
-  .rect-text {top: 405px; left: 67.46vw; width: 137px;}
-  .tree {top: 301px; left: 32.57vw; transform: scale(.8);}
-} */
+@media all and (max-device-width: 415px) {
+  .rect {height: 8vw; width: 60vw;}
+  .rect p {margin-top: .8vw;}
+  .tree {transform: scale(1.4); height: 6.2vw; margin-bottom: 1.4vw; margin-left: 45vw;}
+  }
 /* @media all and (min-device-width: 360px) and (max-device-width: 414px) {
   .rect {top: vw; left: vw; width: vw;}
   .rect-text {top: vw; left: vw; width: vw;}
