@@ -1,0 +1,14 @@
+@import 'reset.css';
+/* стартовый экран */
+@import 'start-page.css';
+/* общие стили */
+@import 'main.css';
+/* адаптивность */
+@import 'responsive.css';
+
+@font-face {
+    font-family: "OktaNeue-Light";
+    src: url("../fonts/OktaNeue-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
