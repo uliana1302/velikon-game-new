@@ -1,0 +1,146 @@
+/* стартовый экран */
+
+/* 2: элементы локации */
+
+.start {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.start div {
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.s-obl-1 {
+  height: 15vw;
+  width: 23vw;
+  top: 10vw;
+  left: 0;
+  background-image: url("../images/start-page/el/s-obl-1.svg");
+}
+.s-obl-2 {
+  height: 8.55vw;
+  width: 18.38vw;
+  top: 14vw;
+  left: 82vw;
+  background-image: url("../images/start-page/el/s-obl-2.svg");
+}
+.s-obl-3 {
+  height: 3.79vw;
+  width: 4.5vw;
+  top: 32vw;
+  left: 95.5vw;
+  background-image: url("../images/start-page/el/s-obl-3.svg");
+}
+.s-sprite {
+  height: 23.47vw;
+  width: 98vw;
+  bottom: -0.5vw;
+  left: 2.5vw;
+  background-image: url("../images/start-page/el/s-sprite.svg");
+}
+.s-tree {
+  height: 6.1vw;
+  width: 6.3vw;
+  top: 5vw;
+  left: 17.8vw;
+  background-image: url("../images/start-page/el/s-tree.svg");
+}
+.s-pr-1 {
+  height: 21.64vw;
+  width: 26.64vw;
+  top: 16vw;
+  left: 17.8vw;
+  background-image: url("../images/start-page/el/s-pr-1.svg");
+}
+.s-pr-2 {
+  height: 13.3vw;
+  width: 24.2vw;
+  top: 12.5vw;
+  left: 19.5vw;
+  background-image: url("../images/start-page/el/s-pr-2.svg");
+}
+.s-pr-3 {
+  height: 13.2vw;
+  width: 46vw;
+  top: 3.5vw;
+  left: 55.7vw;
+  background-image: url("../images/start-page/el/s-pr-3.svg");
+}
+.s-pr-4 {
+  height: 16.2vw;
+  width: 46vw;
+  top: 15.8vw;
+  left: 55.7vw;
+  background-image: url("../images/start-page/el/s-pr-4.svg");
+}
+.s-pr-5 {
+  height: 3.3vw;
+  width: 101.67vw;
+  top: 27.8vw;
+  left: -0.8vw;
+  background-image: url("../images/start-page/el/s-pr-5.svg");
+}
+.s-b {
+  height: 13vw;
+  width: 7.54vw;
+  top: 30vw;
+  left: 21vw;
+  background-image: url("../images/start-page/el/s-b.svg");
+}
+.s-car {
+  height: 3.15vw;
+  width: 4.58vw;
+  top: 6.5vw;
+  left: .76vw;
+  background-image: url("../images/start-page/el/s-car.svg");
+  offset-path: path("M1114 314C1210 322 1410 333.2 1458 314L1471 2C1407 58.6667 1233.8 168.8 1053 156C939.667 138.667 708.2 92.8 689 48C622.333 157.333 376.6 374 -73 366V700H1471L1481 326C1170 400 1198.8 330 1114 314Z");
+  animation: car-move 11s ease infinite;
+}
+@keyframes car-move {
+  to {offset-distance: 100%;}
+}
+
+/* 3: карточка */
+.card {
+  height: 19.65vw;
+  width: 46.8vw;
+  top: 18vw;
+  left: 27vw;
+  position: absolute;
+}
+.card-rec {
+  height: 19.3vw;
+  width: 45.76vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../images/start-page/card_rec.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card-text {
+  position: absolute;
+  top: 5.8vw;
+  left: 6.2vw;
+}
+
+
+/* блок меню */
+.button-play {
+  background-image: url("../images/start-page/button-play.svg");
+  background-repeat: no-repeat;
+  height: 4vw;
+  width: 4vw;
+  background-size: 100%;
+  position: relative;
+  margin-left: 5vw;
+  margin-right: 2vw;
+}
+.perv-text {
+  height: 3.2vw;
+  width: 10.9vw;
+}
