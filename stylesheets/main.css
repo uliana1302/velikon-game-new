@@ -288,6 +288,7 @@ section {
   width: 32.4vw;
   top: 9.8vw;
   left: 68.8vw;
+  z-index: 5;
   background-image: url("../images/l-1/obl-11.svg");
 }
 .obl-12 {
@@ -311,7 +312,7 @@ section {
   position: absolute;
   height: 20.2vw;
   width: 100%;
-  top: 36.55vh;
+  top: 30vh;
   left: 0;
 }
 .belie div {
@@ -322,36 +323,36 @@ section {
   z-index: 5;
 }
 .b-1 {
-  height: 4.4vw;
+  height: 8.4vw;
   width: 1.7vw;
-  top: 2.8vw;
+  top: 2vw;
   left: 2.4vw;
   background-image: url("../images/l-2/b-1.svg");
 }
 .b-2 {
-  height: 13.3vw;
-  width: 20.28vw;
+  height: 16.3vw;
+  width: 23.28vw;
   top: 0;
   left: 4.5vw;
   background-image: url("../images/l-2/b-2.svg");
 }
 .b-3 {
-  height: 12.96vw;
-  width: 7.54vw;
+  height: 17.96vw;
+  width: 9.54vw;
   top: 3.4vw;
-  left: 26.4vw;
+  left: 29.4vw;
   background-image: url("../images/l-2/b-3.svg");
 }
 .b-4 {
-  height: 4.47vw;
+  height: 7.47vw;
   width: 2.5vw;
   top: 3.2vw;
-  left: 36.4vw;
+  left: 39.4vw;
   background-image: url("../images/l-2/b-4.svg");
 }
 .b-5 {
-  height: 18.61vw;
-  width: 8.2vw;
+  height: 27.61vw;
+  width: 11.2vw;
   top: 1.5vw;
   left: 60vw;
   background-image: url("../images/l-2/b-5.svg");
@@ -363,7 +364,12 @@ section {
   left: -1.1vw;
   background-image: url("../images/l-2/verevka-2.svg");
 }
-/* .b-div {} */
+.b-div {
+  height: 90vh;
+  width: 95vw;
+  top: -18vw;
+  left: 1.5vw;
+}
 
     /* локация 3 */
 .provoda {
@@ -373,6 +379,7 @@ section {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 .provoda div {
   position: absolute;
@@ -483,7 +490,7 @@ section {
 .stolb-1 {
   height: 48.61vw;
   width: 1.1vw;
-  top: 6.4vw;
+  top: 7.5vw;
   left: 39.9vw;
   background-image: url("../images/l-3/stolb-1.svg");
 }
@@ -560,14 +567,14 @@ section {
 .riba-4 {
   height: 8.72vw;
   width: 12.35vw;
-  top: 19vw;
+  top: 24vw;
   left: 27.3vw;
   background-image: url("../images/l-4/riba-4.svg");
 }
 .riba-5 {
-  height: 4.07vw;
+  height: 4.3vw;
   width: 23.85vw;
-  top: 33.8vw;
+  top: 42vw;
   left: 16.2vw;
   background-image: url("../images/l-4/riba-5.svg");
 }
@@ -587,23 +594,24 @@ section {
 }
 .riba-8 {
   height: 6.83vw;
-  width: 8.12vw;
+  width: 5.12vw;
   top: 4vw;
-  left: 83vw;
+  left: 91vw;
   background-image: url("../images/l-4/riba-8.svg");
 }
 .riba-9 {
   height: 8.72vw;
   width: 12.35vw;
-  top: 23vw;
-  left: 86.6vw;
+  top: 17vw;
+  left: 83.6vw;
+  z-index: 5;
   background-image: url("../images/l-4/riba-9.svg");
 }
 .riba-10 {
   height: 7.66vw;
   width: 7.72vw;
-  top: 40vw;
-  left: 90.8vw;
+  top: 43vw;
+  left: 75.8vw;
   background-image: url("../images/l-4/riba-10.svg");
 }
 .m-1 {
@@ -616,14 +624,14 @@ section {
 .m-2 {
   height: 9.53vw;
   width: 5.72vw;
-  top: 22.5vw;
+  top: 28vw;
   left: 36vw;
   background-image: url("../images/l-4/m-2.svg");
 }
 .m-3 {
   height: 8.1vw;
   width: 17.54vw;
-  top: 32vw;
+  top: 40.5vw;
   left: 28vw;
   background-image: url("../images/l-4/m-3.svg");
 }
@@ -644,9 +652,15 @@ section {
 .m-6 {
   height: 10.19vw;
   width: 6.11vw;
-  top: 37vw;
-  left: 86.9vw;
+  top: 40vw;
+  left: 71.7vw;
   background-image: url("../images/l-4/m-6.svg");
+}
+.m-anim {
+  animation: m 30s ease;
+}
+@keyframes m {
+  10%, 100% {top: -30vw;}
 }
     /* последний экран: голова */
 .golova {
@@ -664,6 +678,56 @@ section {
 @keyframes golova {
   0% {top: -48vw;}
   100% {top: -8vw;}
+}
+/* 4: табличка */
+.tabl {
+  position: absolute;
+  height: 15.83vw;
+  width: 11.88vw;
+  top: 22vw;
+  left: 82vw;
+}
+.v {
+  height: 11.3vw;
+  width: 5.12vw;
+  top: 0;
+  left: 20.5vw;
+  background-image: url("../images/verevka-tabl.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation: verev 8s 2s ease;
+}
+.verev-2, .verev-3, .verev-4 {display: none;}
+@keyframes verev {
+  0% {left: 20.5vw;}
+  30%, 60% {left: 3.5vw; display: block;}
+  100% {left: 20.5vw;}
+}
+.t {
+  height: 4.7vw;
+  bottom: 0;
+  left: 20.5vw;
+  background-color: black;
+  z-index: 10;
+  position: absolute;
+  animation: tablichka 8s 2s ease;
+}
+.tablichka-2, .tablichka-3, .tablichka-4 {display: none;}
+.tablichka-1, .tablichka-3, .tablichka-4 {width: 9.7vw;}
+.tablichka-2 {width: 11vw;}
+@keyframes tablichka {
+  0% {left: 20.5vw;}
+  30%, 60% {left: 1.8vw; display: block;}
+  100% {left: 20.5vw;}
+}
+.t p {
+  text-align: center;
+  padding-top: .5vw;
+  color: white;
+}
+.t p:nth-of-type(2), .t p:nth-of-type(3), .t p:nth-of-type(4) {
+  display: none;
 }
 
 
@@ -724,8 +788,18 @@ section {
   justify-content: center;
   align-content: center;
 }
+.menu-panel p:nth-of-type(2), .menu-panel p:nth-of-type(3), .menu-panel p:nth-of-type(4) {
+  display: none;
+}
 .menu-panel p {
+  text-align: center;
+  padding-top: .5vw;
   opacity: 0;
+  animation: menu-panel-p 30s 4s linear;
+}
+@keyframes menu-panel-p {
+  0%, 7% {opacity: 0;}
+  5%, 10%, 100% {opacity: 1;}
 }
 .posl-text {
   display: none;
