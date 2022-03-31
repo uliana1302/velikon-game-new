@@ -26,11 +26,6 @@ $(function () {
 	});
 
   // переход на другую локацию
-
-  	// if($(".obl-1, .obl-2, .obl-3, .obl-4, .obl-5, .obl-6, .obl-7, .obl-8, .obl-9, .obl-10, .obl-11, .obl-12, .obl-13").css("opacity") == "0") {
-  	// 	$(".sprite-l1").css('display', 'none');
-  	// }
-
   	let count = 0;
   	$(".button-next").click(function () {
   		count += 1;
