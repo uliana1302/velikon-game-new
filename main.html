@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- мета теги -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- подключение стилей -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <!-- фавикон -->
+  <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Прогулка с великаном</title>
+  <!-- подключение скриптов -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="javascripts/main.js"></script>
+</head>
+<body>
+
+<!-- блок игрового поля -->
+  <section class="pole">
+    <!-- 1: ноги -->
+    <div class="nogi">
+      <div class="noga_1"></div>
+      <div class="noga_2"></div>
+    </div>
+
+    <!-- 2: спрайтовая анимация -->
+    <div class="sprite">
+      <div class="sprite-l1"></div>
+      <div class="sprite-l2"></div>
+      <div class="sprite-l3"></div>
+      <div class="sprite-l4"></div>
+    </div>
+
+    <!-- 3: элементы локации -->
+    <div class="elements">
+      <!-- локация 1: облака -->
+      <div class="oblaka">
+          <div class="obl-1"></div>
+          <div class="obl-2"></div>
+          <div class="obl-3"></div>
+          <div class="obl-4"></div>
+          <div class="obl-5"></div>
+          <div class="obl-6"></div>
+          <div class="obl-7"></div>
+          <div class="obl-8"></div>
+          <div class="obl-9"></div>
+          <div class="obl-10"></div>
+          <div class="obl-11"></div>
+          <div class="obl-12"></div>
+          <div class="obl-13"></div>
+        </div>
+      <!-- локация 2: бельё -->
+      <div class="belie">
+          <div class="b-1"></div>
+          <div class="b-2"></div>
+          <div class="b-3"></div>
+          <div class="b-4"></div>
+          <div class="b-5"></div>
+          <div class="verevka-2"></div>
+          <div class="b-div"></div>
+        </div>
+      <!-- локация 3: провода -->
+      <div class="provoda">
+          <div class="pr-1"></div>
+          <div class="pr-2"></div>
+          <div class="pr-3"></div>
+          <div class="pr-4"></div>
+          <div class="pr-5"></div>
+          <div class="pr-6"></div>
+          <div class="pr-7"></div>
+          <div class="pr-8"></div>
+          <div class="pr-1_1 h"></div>
+          <div class="pr-3_1 h"></div>
+          <div class="pr-4_1 h"></div>
+          <div class="pr-5_1 h"></div>
+          <div class="pr-6_1 h"></div>
+          <div class="pr-8_1 h"></div>
+          <div class="stolb-1"></div>
+          <div class="stolb-2"></div>
+          <div class="car-1"></div>
+          <div class="car-2"></div>
+        </div>
+      <!-- локация 4: рыбы и мусор -->
+      <div class="ribi-musor">
+        <div class="riba-1"></div>
+        <div class="riba-2"></div>
+        <div class="riba-3"></div>
+        <div class="riba-4"></div>
+        <div class="riba-5"></div>
+        <div class="riba-6"></div>
+        <div class="riba-7"></div>
+        <div class="riba-8"></div>
+        <div class="riba-9"></div>
+        <div class="riba-10"></div>
+
+        <div class="m-1"></div>
+        <div class="m-2"></div>
+        <div class="m-3"></div>
+        <div class="m-4"></div>
+        <div class="m-5"></div>
+        <div class="m-6"></div>
+      </div>
+      <!-- последний экран: голова -->
+        <div class="golova"></div>
+    </div>
+
+    <!-- 4: табличка -->
+    <div class="tabl">
+      <div class="verev"></div>
+      <div class="tablichka"><p></p></div>
+    </div>
+  </section>
+
+<!-- блок меню -->
+  <section class="menu">
+    <div class="button-pause"></div>
+    <div class="button-restart"></div>
+    <div class="menu-panel">
+      <p>Расчисти небо !</p>
+      <p>Освободи верёвки !</p>
+      <p>Расчисти линии передач !</p>
+      <p>Освободи рыбок !</p>
+    </div>
+    <div class="button-next"></div>
+    <!-- текст на последнем экране -->
+    <div class="posl-text">
+      <div class="text-k1"><p>ещё погуляем ?</p></div>
+      <div class="text-k2"><p>Воробьёва Ульяна <br> Б21ДЗ10, 2022</p></div>
+    </div>
+  </section>
+
+<!-- экран для мобильных устройств -->
+  <section class="adaptive">
+    <div class="rect"></div>
+    <div class="rect-text"><p>переверни экран</p></div>
+    <div class="tree"></div>
+  </section>
+
+</body>
+</html>
