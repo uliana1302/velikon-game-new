@@ -831,5 +831,28 @@ section {
   height: 100vh;
   width: 100vw;
   top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
   display: none;
+}
+.rect {
+  width: 38vw;
+  height: 5.4vw;
+  border: 2px solid black;
+  background-color: white;
+}
+.rect p {
+  margin-top: 1vw;
+  text-align: center;
+}
+.tree {
+  width: 3.43vw;
+  height: 6.1vw;
+  margin-left: 32vw;
+  background-image: url("../images/tree.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
