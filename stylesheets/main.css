@@ -38,7 +38,7 @@ section {
 }
 .nogi div {
   position: absolute;
-  height: 57vw;
+  height: 82.5vw;
   width: 33.1vw;
   bottom: 0;
   background-size: 90%;
@@ -189,16 +189,8 @@ section {
   width: 100%;
   top: 0;
   left: 0;
-  /* background-image: url("../images/start-page/none-moveable.svg"); */
-  /* background-image: url("../images/Frame 35.png"); */
-  /* background-image: url("../images/l-4/Frame 50.png"); */
-  /* background-image: url("../images/l-3/Frame 38.png"); */
-  /* background-image: url("../images/l-2/Frame 36.png"); */
-  /* background-image: url("../images/l-1/Group 207.png"); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .5; */
 }
+
   /* локация 1: облака */
 .oblaka {
   position: absolute;
@@ -495,7 +487,7 @@ section {
   background-image: url("../images/l-3/stolb-1.svg");
 }
 .stolb-2 {
-  height: 57.22vw;
+  height: 56vw;
   width: 1.1vw;
   top: 0;
   left: 96.2vw;
@@ -767,7 +759,6 @@ section {
   width: 4vw;
   background-size: 100%;
   position: relative;
-  /* margin-right: 3.5vw; */
   margin-left: 23vw;
   z-index: 100;
 }
@@ -787,6 +778,7 @@ section {
   display: flex;
   justify-content: center;
   align-content: center;
+  z-index: 200;
 }
 .menu-panel p:nth-of-type(2), .menu-panel p:nth-of-type(3), .menu-panel p:nth-of-type(4) {
   display: none;
