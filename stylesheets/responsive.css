@@ -1,42 +1,90 @@
-/* изменение кегля текста */
-/* десктоп */
+@media all and (min-device-width: 1920px) {
+  .card-rec {transform: scale(0.9);}
+  .stolb-1 {height: 42.8vw;}
+  .stolb-2 {height: 50.3vw;}
+  .t {height: 3.5vw; bottom: 1.5vw;}
+  .menu-panel {height: 3.5vw;}
+  .tablichka-2 {bottom: 3.5vw}
+  .verev-2 {top: -2vw}
+  .s-car {display: none;}
+}
 @media all and (min-device-width: 1367px) {
   p {font-size: 30px; line-height: 40px;}
 }
-/* планшет и мелкий десктоп */
+@media all and (min-device-width: 1366px) and (max-device-width: 1439px) {
+  .stolb-1 {height: 42.8vw;}
+  .stolb-2 {height: 50.3vw;}
+  .t {height: 4vw;}
+  .tablichka-1, .tablichka-3, .tablichka-4 {bottom: 1vw}
+  .tablichka-2 {bottom: 3vw}
+  .verev-2 {top: -2vw}
+  .s-car {display: none;}
+  }
+@media all and (min-device-width: 1024px) and (max-device-width: 1365px) {
+  .card-rec {transform: scale(1.1);}
+  .stolb-1 {height: 51.8vw; top: 15.5vw;}
+  .stolb-2 {height: 60.22vw; top: 3vw; transform: scale(1.2);}
+  .tablichka-2 {bottom: -3.5vw; width: 12.5vw;}
+  .verev-2 {top: 4vw}
+  .menu-panel p {padding-top: .2vw;}
+  .s-car {display: none;}
+}
 @media all and (min-device-width: 897px) and (max-device-width: 1366px) {
   p {font-size: 24px; line-height: 36px;}
 }
-/* мобилки */
-@media all and (min-device-width: 360px) and (max-device-width: 896px) {
-  p {font-size: 16px; line-height: 24px;}
+@media all and (min-device-width: 896px) and (max-device-width: 1024px) {
+  .s-obl-1 {top: 5vw;}
+  .s-tree {top: 3vw;}
+  .s-pr-1 {top: 12vw;}
+  .s-pr-2 {top: 7.4vw;}
+  .s-pr-3 {top: -1.5vw;}
+  .s-pr-5 {top: 22.8vw;}
+  .s-b {top: 25vw;}
+  .card {top: 12vw;}
+  .s-car {display: none;}
 }
-
-/* остальные свойства */
-/* @media only screen and (min-device-width: 1441px) {
-  .menu {height: 5.35vw;}
-  .graphic {height: 51vw;}
-  .bottom-play {top: 1.4vw;}
-  .menu-text {top: -3vw;}
-  img {transform: scale(1.3);}
-  .div-fon {top: 0; left: 0; height: 89.4vh; background-image: url("../images/start-page/fon-1920.svg"); background-repeat: no-repeat; background-size: 100%; background-position: bottom left;}
-  .card {left: 34vw;}
-  .card-rec {transform: scale(.8); top: 0; left: -1.2vw;}
-  .card-text {top: 4.5vw; left: 5vw;}
-  .car {top: -1vw; left: 0; offset-path: path("M1428 508C1524 516 1785 556.203 1964 472V2C1900 58.6667 1471.8 255.8 1291 243C1177.67 225.667 865.2 179.8 846 135C588 422 365.6 542 -84 534V972L1964 983V524C1653 598 1512.8 524 1428 508Z");}
-} */
-
-@media all and (max-device-width: 768px) {
+@media all and (min-device-width: 639px) and (max-device-width: 897px) and (orientation: landscape) {
+  p {font-size: 16px; line-height: 24px;}
+  section {overflow: visible;}
+  .menu {justify-content: center;}
+  .button-pause {order: 2; margin-left: 1.5vw; margin-right: 1.5vw;}
+  .button-restart {order: 1;}
+  .button-next {order: 3;}
+  .button-restart, .button-next {margin-left: 0; margin-right: 0;}
+  .menu-panel {position: absolute; margin-left: 0; margin-top: -81vw; background-color: white; width: 29.11vw; height: 4.24vw;}
+  .text-k1 {display: none;}
+  .text-k2 {right: 0; bottom: -0.9vw;}
+  .text-k2 p {font-size: 11px; line-height: 15px;}
+  .stolb-1 {height: 43vw;}
+  .stolb-2 {height: 50.5vw;}
+  .obl-13 {top: 34vw;}
+  .tablichka-2 {bottom: 2.5vw; width: 12.5vw;}
+  .verev-2 {top: -2.5vw}
+  .s-car {display: none;}
+}
+@media all and (min-device-width: 639px) and (max-device-width: 895px) {
+  .card-rec {transform: scale(1.1);}
+  .perv-text {width: 14vw;}
+}
+@media all and (min-device-width: 800px) and (max-device-width: 897px) and (orientation: landscape) {
+  .stolb-1 {height: 34vw;}
+  .stolb-2 {height: 41.5vw;}
+  .riba-10 {top: 34vw;}
+  .riba-5 {top: 34.5vw;}
+  .m-6 {top: 31vw;}
+  .m-3 {top: 33vw;}
+  .tablichka-2 {bottom: 4.5vw; width: 12.5vw;}
+  .verev-2 {top: -4.5vw}
+}
+@media all and (max-device-width: 768px) and (orientation: portrait) {
   .pole, .menu {display: none;}
   .adaptive {display: flex;}
+}
+@media all and (max-device-width: 641px) {
+  .menu-panel {margin-top: -98vw; width: 35vw;}
 }
 @media all and (max-device-width: 415px) {
   .rect {height: 8vw; width: 60vw;}
   .rect p {margin-top: .8vw;}
   .tree {transform: scale(1.4); height: 6.2vw; margin-bottom: 1.4vw; margin-left: 45vw;}
-  }
-/* @media all and (min-device-width: 360px) and (max-device-width: 414px) {
-  .rect {top: vw; left: vw; width: vw;}
-  .rect-text {top: vw; left: vw; width: vw;}
-  .tree {top: vw; left: vw; transform: scale(1.3);}
-} */
+}
